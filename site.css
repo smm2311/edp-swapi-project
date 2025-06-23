@@ -59,7 +59,25 @@ label {
   padding: 0;
 }
 
+/* Films */
+#filmsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
 #charactersList div {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid var(--dark2);
+  border-radius: 5px;
+  color: var(--dark2);
+  background-color: var(--light2);
+  font-weight: bold;
+}
+
+#filmsList div {
   padding: 10px;
   margin: 10px;
   border: 1px solid var(--dark2);

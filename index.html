@@ -12,13 +12,23 @@
 
 <body>
   <div>
-    <h1>Star Wars Universe Lookup</h1>
-    <label for="searchString">Who you looking for? <span class="small">(Regular expressions are cool
+    <h1>Star Wars Universe Character Lookup</h1>
+    <label for="characterSearchString">Who you looking for? <span class="small">(Regular expressions are cool
         here)</span></label>
-    <input id="searchString" oninput="filterCharacters()" autocomplete="off" />
+    <input id="characterSearchString" oninput="filterCharacters()" autocomplete="off" />
   </div>
   <section id="charactersList">
   </section>
+
+  <div>
+    <h1>Star Wars Universe Film Lookup</h1>
+    <label for="filmSearchString">What you looking for? <span class="small">(Regular expressions are cool
+        here)</span></label>
+    <input id="filmSearchString" oninput="filterFilms()" autocomplete="off" />
+  </div>
+  <section id="filmsList">
+  </section>
+
 </body>
 
 </html>
