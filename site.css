@@ -87,8 +87,9 @@ label {
 
 /* Character page */
 h1#name,
-h1#title {
-  margin: 50px;
+h1#title,
+h1#starship_class { /* Updated to include starship_class */
+  margin: 50px; /* Consistent margin for h1 elements */
 }
 
 #generalInfo {
@@ -108,12 +109,6 @@ h1#title {
 #generalInfo span {
   font-weight: bold;
   font-size: 1.1em;
-}
-
-h1 span#starship_class { 
-  padding: 50px;
-  position: relative;
-  top: 20px;
 }
 
 section#planets,
