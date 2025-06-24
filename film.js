@@ -61,7 +61,7 @@ function renderFilm(film) {
 
     const characters = film?.characters?.map(character => `<li><a href="/character.html?id=${character.id}">${character.name}</li>`);
     const planets = film?.planets?.map(planet => `<li><a href="/planet.html?id=${planet.id}">${planet.name}</li>`);
-    const starships = film?.starships?.map(starship => `<li><a href="/starship.html?id=${starship.id}">${starship.name}</li>`);
+    const starships = film?.starships?.map(starship => `<li><a href="/starships.html?id=${starship.id}">${starship.name}</li>`);
     
     charactersUl.innerHTML = characters.join("");
     planetsUl.innerHTML = planets.join("");
