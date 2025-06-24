@@ -30,7 +30,6 @@ button {
   border: 1px solid var(--dark2);
 }
 
-/* Search bar input */
 input {
   display: block;
   width: 95%;
@@ -43,7 +42,6 @@ input {
   margin: 5px;
 }
 
-/* Search bar label */
 label {
   font-weight: bold;
   font-size: 1.1em;
@@ -54,7 +52,6 @@ label {
   font-weight: normal;
 }
 
-/* List styling for index.html */
 #charactersList,
 #filmsList,
 #starshipsList,
@@ -85,11 +82,10 @@ label {
   margin-top: 50px;
 }
 
-/* Character page */
 h1#name,
 h1#title,
-h1#starship_class { /* Updated to include starship_class */
-  margin: 50px; /* Consistent margin for h1 elements */
+h1#starship_class { 
+  margin: 50px; 
 }
 
 #generalInfo {
