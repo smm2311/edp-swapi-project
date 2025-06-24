@@ -29,6 +29,7 @@ button {
   border: 1px solid var(--dark2);
 }
 
+/* Search bar input */
 input {
   display: block;
   width: 95%;
@@ -41,6 +42,7 @@ input {
   margin: 5px;
 }
 
+/* Search bar label */
 label {
   font-weight: bold;
   font-size: 1.1em;
@@ -51,7 +53,7 @@ label {
   font-weight: normal;
 }
 
-/* Characters */
+/* Characters List on index.html*/
 #charactersList {
   display: flex;
   flex-wrap: wrap;
@@ -59,7 +61,7 @@ label {
   padding: 0;
 }
 
-/* Films */
+/* Films List on index.html */
 #filmsList {
   display: flex;
   flex-wrap: wrap;
