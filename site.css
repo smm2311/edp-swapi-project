@@ -53,23 +53,21 @@ label {
   font-weight: normal;
 }
 
-/* Characters List on index.html*/
-#charactersList {
+/* List styling for index.html */
+#charactersList,
+#filmsList,
+#starshipsList,
+#planetsList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0;
 }
 
-/* Films List on index.html */
-#filmsList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0;
-}
-
-#charactersList div {
+#charactersList div,
+#filmsList div,
+#starshipsList div,
+#planetsList div {
   padding: 10px;
   margin: 10px;
   border: 1px solid var(--dark2);
@@ -79,14 +77,9 @@ label {
   font-weight: bold;
 }
 
-#filmsList div {
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid var(--dark2);
-  border-radius: 5px;
-  color: var(--dark2);
-  background-color: var(--light2);
-  font-weight: bold;
+#filmH1,
+#planetH1 {
+  margin-top: 50px;
 }
 
 /* Character page */
@@ -114,32 +107,37 @@ h1#title {
   font-size: 1.1em;
 }
 
+h1 span#starship_class { 
+  padding: 50px;
+  position: relative;
+  top: 20px;
+}
+
 section#planets,
 section#characters,
-section#starships,
+section#starships, 
 section#films,
 section#people,
-section#pilots { /* Added pilots section */
-
+section#pilots {
   margin: 50px;
 }
 
 section#planets ul,
 section#characters ul,
-section#starships ul,
+section#starships ul, 
 section#films ul,
 section#people ul,
-section#pilots ul { /* Added pilots section */
+section#pilots ul {
   list-style-type: none;
   padding: 0;
 }
 
 section#planets a,
 section#characters a,
-section#starships a,
+section#starships a, 
 section#films a,
 section#people a,
-section#pilots a { /* Added pilots section */
+section#pilots a {
   display: inline-block;
   text-decoration: none;
   font-size: 1.1em;

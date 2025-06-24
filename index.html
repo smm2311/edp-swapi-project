@@ -21,12 +21,29 @@
   </section>
 
   <div>
-    <h1>Star Wars Universe Film Lookup</h1>
+    <h1 id="filmH1">Star Wars Universe Film Lookup</h1>
     <label for="filmSearchString">What you looking for? <span class="small">(Regular expressions are cool
         here)</span></label>
     <input id="filmSearchString" oninput="filterFilms()" autocomplete="off" />
   </div>
   <section id="filmsList">
+  </section>
+
+  <div>
+    <h1>Star Wars Universe Starship Class Lookup</h1>
+    <label for="starshipSearchString">Which starship class are you looking for? <span class="small">(Regular expressions are cool
+        here)</span></label>
+    <input id="starshipSearchString" oninput="filterStarships()" autocomplete="off" />
+  </div>
+  <section id="starshipsList">
+  </section>
+  
+    <h1 id="planetH1">Star Wars Universe Planet Lookup</h1>
+    <label for="planetSearchString">What you looking for? <span class="small">(Regular expressions are cool
+        here)</span></label>
+    <input id="planetsSearchString" oninput="filterPlanets()" autocomplete="off" />
+  </div>
+  <section id="planetsList">
   </section>
 
 </body>
