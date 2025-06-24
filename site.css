@@ -78,12 +78,15 @@ label {
 }
 
 #filmH1,
+#characterH1,
+#starshipH1,
 #planetH1 {
   margin-top: 50px;
 }
 
 /* Character page */
-h1#name {
+h1#name,
+h1#title {
   margin: 50px;
 }
 
@@ -182,5 +185,28 @@ section {
   }
   to {
     left: 100%; /* End off-screen */
+  }
+}
+#openingCrawl p {
+  text-align: center;
+  padding: 20px;
+  margin-left: 700px;
+  margin-right: 700px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 2em;
+  color: yellow;
+  background-color: var(--dark1);
+  overflow: hidden;
+  transform: rotateY(90deg);
+  animation: 15s linear 0s 1 forwards crawl-up;
+}
+
+@keyframes crawl-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
