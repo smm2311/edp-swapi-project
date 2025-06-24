@@ -193,21 +193,20 @@ div:has(#openingCrawl) {
    p {
     text-align: center;
     padding: 20px;
-    width: 70%;
+    width: 50%;
     margin: 50px auto;
     font-size: 2em;
     color: yellow;
     background-color: none;
-    overflow: hidden;
-    animation: 15s linear 0s 1 forwards crawl-up;
+    animation: 10s linear 0s 1 forwards crawl-up;
   }
 }
 
 @keyframes crawl-up {
   from {
-    transform: translateY(100%) rotateX(30deg);
+    transform: rotateX(45deg) translateY(100%);
   }
   to {
-    transform: translateY(0) rotateX(30deg);
+    transform: rotateX(45deg) translateY(0);
   }
 }
