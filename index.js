@@ -16,6 +16,13 @@ const starshipsList = document.querySelector("#starshipsList");
 
 document.addEventListener('DOMContentLoaded', getStarships);
 
+let planets = [];
+let matchingPlanets = [];
+const planetsList = document.querySelector("#planetsList")
+
+// Is this necessary?
+document.addEventListener('DOMContentLoaded', getPlanets)
+
 async function getCharacters() {
   let url = 'http://localhost:9001/api/characters';
 
@@ -115,3 +122,38 @@ const renderStarships = starships => {
 }
 
 const goToStarshipPage = id => window.location = `/starships.html?id=${id}`;
+
+
+async function getPlanets() {
+  let url = 'http://localhost:9001/api/planets';
+
+  try {
+    const fetchedPlanets = await fetch(url)
+      .then(res => res.json())
+      planets.push(...fetchedPlanets);
+  }
+  catch (ex) {
+    console.error("Error reading planets.", ex.message);
+  }
+  console.log("All the planets are ", planets)
+  renderPlanets(planets);
+}
+
+const filterPlanets = () => {
+  const planetSearchString = document.querySelector("#planetsSearchString").value;
+  const re = new RegExp(planetSearchString, "i");
+  matchingPlanets = planets.filter(planet => re.test(planet.name))
+  renderPlanets(matchingPlanets);
+}
+
+const renderPlanets = planets => {
+  const divs = planets.map(planet => {
+    const el = document.createElement('div');
+    el.addEventListener('click', () => goToPlanetPage(planet.id));
+    el.textContent = planet.name;
+    return el;
+  })
+  planetsList.replaceChildren(...divs)
+}
+
+const goToPlanetPage = id => window.location = `/planet.html?id=${id}`
