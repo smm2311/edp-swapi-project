@@ -189,12 +189,14 @@ div:has(#openingCrawl) {
    p {
     text-align: center;
     padding: 20px;
-    width: 50%;
+    width: 500px;
     margin: 50px auto;
     font-size: 2em;
     color: yellow;
     background-color: none;
-    animation: 10s linear 0s 1 forwards crawl-up;
+    animation: 
+      5s linear 1s 1 forwards crawl-up,
+      3s linear 6s 1 forwards fade-out;
   }
 }
 
@@ -203,6 +205,17 @@ div:has(#openingCrawl) {
     transform: rotateX(45deg) translateY(100%);
   }
   to {
-    transform: rotateX(45deg) translateY(0);
+    transform: rotateX(45deg) translateY(-50%);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: rotateX(45deg) translateY(-50%);
+  }
+  to {
+    opacity: 0;
+    transform: rotateX(45deg) translateY(-150%);
   }
 }
