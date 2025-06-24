@@ -117,7 +117,9 @@ section#planets,
 section#characters,
 section#starships,
 section#films,
-section#people {
+section#people,
+section#pilots { /* Added pilots section */
+
   margin: 50px;
 }
 
@@ -125,7 +127,8 @@ section#planets ul,
 section#characters ul,
 section#starships ul,
 section#films ul,
-section#people ul {
+section#people ul,
+section#pilots ul { /* Added pilots section */
   list-style-type: none;
   padding: 0;
 }
@@ -134,11 +137,11 @@ section#planets a,
 section#characters a,
 section#starships a,
 section#films a,
-section#people a {
+section#people a,
+section#pilots a { /* Added pilots section */
   display: inline-block;
   text-decoration: none;
   font-size: 1.1em;
-
   background-color: var(--light2);
   color: var(--dark2);
   font-weight: bold;
