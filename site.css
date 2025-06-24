@@ -139,6 +139,13 @@ h1#name {
   font-size: 1.1em;
 }
 
+
+h1 span#starship_class { 
+  padding: 50px;
+  position: relative;
+  top: 20px;
+}
+
 section#planets,
 section#characters,
 section#starships,
