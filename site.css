@@ -90,7 +90,8 @@ label {
 }
 
 /* Character page */
-h1#name {
+h1#name,
+h1#title {
   margin: 50px;
 }
 
@@ -149,4 +150,28 @@ section#pilots a { /* Added pilots section */
   margin: 10px;
   border-radius: 5px;
   border: 1px solid var(--dark2);
+}
+
+#openingCrawl p {
+  text-align: center;
+  padding: 20px;
+  margin-left: 700px;
+  margin-right: 700px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 2em;
+  color: yellow;
+  background-color: var(--dark1);
+  overflow: hidden;
+  transform: rotateY(90deg);
+  animation: 15s linear 0s 1 forwards crawl-up;
+}
+
+@keyframes crawl-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

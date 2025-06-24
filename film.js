@@ -4,6 +4,8 @@ let releaseDateSpan;
 let directorSpan;
 let producerSpan;
 
+let crawlP;
+
 let charactersUl;
 let planetsUl;
 let starshipsUl;
@@ -16,6 +18,8 @@ addEventListener('DOMContentLoaded', () => {
     releaseDateSpan = document.querySelector('span#release');
     directorSpan = document.querySelector('span#director');
     producerSpan = document.querySelector('span#producer');
+
+    crawlP = document.querySelector('#openingCrawl>p');
 
     charactersUl = document.querySelector('#characters>ul');
     planetsUl = document.querySelector('#planets>ul');
@@ -58,6 +62,8 @@ function renderFilm(film) {
     releaseDateSpan.textContent = film?.release_date;
     directorSpan.textContent = film?.director;
     producerSpan.textContent = film?.producer;
+
+    crawlP.textContent = film?.opening_crawl;
 
     const characters = film?.characters?.map(character => `<li><a href="/character.html?id=${character.id}">${character.name}</li>`);
     const planets = film?.planets?.map(planet => `<li><a href="/planet.html?id=${planet.id}">${planet.name}</li>`);
