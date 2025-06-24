@@ -95,24 +95,29 @@ h1#name {
 
 section#planets,
 section#characters,
-section#films {
+section#films,
+section#starships,
+section#pilots { /* Added pilots section */
   margin: 50px;
 }
 
 section#planets ul,
 section#characters ul,
-section#films ul {
+section#films ul,
+section#starships ul,
+section#pilots ul { /* Added pilots section */
   list-style-type: none;
   padding: 0;
 }
 
 section#planets a,
 section#characters a,
-section#films a {
+section#films a,
+section#starships a,
+section#pilots a { /* Added pilots section */
   display: inline-block;
   text-decoration: none;
   font-size: 1.1em;
-
   background-color: var(--light2);
   color: var(--dark2);
   font-weight: bold;
