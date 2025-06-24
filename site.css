@@ -69,6 +69,22 @@ label {
   padding: 0;
 }
 
+#filmH1{
+  margin-top: 50px;
+}
+
+/* Films List on index.html */
+#planetsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+#planetH1{
+  margin-top: 50px;
+}
+
 #charactersList div {
   padding: 10px;
   margin: 10px;
@@ -80,6 +96,16 @@ label {
 }
 
 #filmsList div {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid var(--dark2);
+  border-radius: 5px;
+  color: var(--dark2);
+  background-color: var(--light2);
+  font-weight: bold;
+}
+
+#planetsList div {
   padding: 10px;
   margin: 10px;
   border: 1px solid var(--dark2);
