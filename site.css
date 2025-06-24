@@ -180,26 +180,30 @@ section {
   }
 }
 
-#openingCrawl p {
-  text-align: center;
-  padding: 20px;
-  margin-left: 700px;
-  margin-right: 700px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-size: 2em;
-  color: yellow;
-  background-color: black;
-  overflow: hidden;
-  transform: rotateY(90deg);
-  animation: 15s linear 0s 1 forwards crawl-up;
+div:has(#openingCrawl) {
+  perspective: 500px;
+}
+
+#openingCrawl {
+  perspective: 1000px;
+   p {
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+    margin: 50px auto;
+    font-size: 2em;
+    color: yellow;
+    background-color: none;
+    overflow: hidden;
+    animation: 15s linear 0s 1 forwards crawl-up;
+  }
 }
 
 @keyframes crawl-up {
   from {
-    transform: translateY(100%);
+    transform: translateY(100%) rotateX(30deg);
   }
   to {
-    transform: translateY(0);
+    transform: translateY(0) rotateX(30deg);
   }
 }
